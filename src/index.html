@@ -4,10 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ticket Manager</title>
+  <title>chat</title>
 </head>
 <body>
-  
-  
+<div class="welcome--modal">
+  <div class="welcome__title">Введите псевдоним</div>
+  <form class="welcome__form">
+    <input type="text" class="welcome__input" pattern="^[a-zA-Zа-яА-Я]{3,}$">
+    <button class="welcome__button button">Продолжить</button>
+  </form>
+   <div class="nickname__modal">
+    <div class="nickname__title">Такой псевдоним занят, пожалуйста, выберите другой</div>
+    <button class="nickname__button button">ОК</button>
+   </div>
+</div>
+<div class="chat--modal">
+  <div class="users-list"></div>
+  <div class="chat-area">
+  </div>
+</div>
 </body>
 </html>
